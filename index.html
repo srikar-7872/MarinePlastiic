@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260929-05-baae6c9","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaAssimilate — Marine Intelligence</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#061522;--deep:#081d2d;--panel:#0b2637;--line:#1d475c;--cyan:#50d8e8;--teal:#1aa99b;--ink:#e8f5f8;--muted:#91aeba;--amber:#f1b84b;--red:#f06b6b;--green:#52cf9b}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:"Work Sans",sans-serif;overflow-x:hidden}
+    .ocean-grid{background-image:linear-gradient(rgba(80,216,232,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(80,216,232,.035) 1px,transparent 1px),radial-gradient(circle at 70% 0%,#103d52 0,transparent 32%);background-size:32px 32px,32px 32px,auto}
+    .panel{background:linear-gradient(145deg,rgba(14,48,66,.94),rgba(7,29,43,.96));border:1px solid var(--line);box-shadow:0 16px 35px rgba(0,0,0,.18)}
+    .label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+    .tiny{font-size:10px;letter-spacing:.1em}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;border:1px solid #2a5c70;padding:.55rem .75rem;font-size:12px;font-weight:600;color:#dff8fb;background:#103246;transition:.18s}
+    .btn:hover{background:#174a61;border-color:var(--cyan)}
+    .btn.primary{background:#168d9b;border-color:var(--cyan);color:white}
+    .btn.warn{background:#7a5318;border-color:var(--amber)}
+    .btn:disabled{opacity:.5;cursor:not-allowed}
+    .badge{display:inline-flex;align-items:center;gap:.3rem;border:1px solid #2d6376;padding:.16rem .4rem;font-size:9px;font-weight:700;letter-spacing:.08em;white-space:nowrap}
+    .sim{color:#f3c96d;border-color:#896829;background:#4c3a18}
+    .field{color:#b9a5ff;border-color:#6653a5;background:#251e3b}
+    .model{color:#69ddec;border-color:#287a88;background:#0a3843}
+    .real{color:#62d9a8;border-color:#277858;background:#113b30}
+    .nav-btn{width:100%;display:flex;align-items:center;gap:.7rem;padding:.7rem .8rem;border-left:2px solid transparent;color:#a9c2ca;text-align:left;font-size:13px}
+    .nav-btn:hover,.nav-btn.active{background:#10384b;color:#fff;border-left-color:var(--cyan)}
+    input,select,textarea{width:100%;background:#071c29;color:#e8f5f8;border:1px solid #285166;padding:.52rem;font:inherit;font-size:12px}
+    input:focus,select:focus,textarea:focus,button:focus{outline:2px solid var(--cyan);outline-offset:2px}
+    .view{display:none}.view.active{display:block;animation:reveal .3s ease}
+    .drawer{position:fixed;right:0;top:0;height:calc(100 * min(var(--vh,1vh),1vh));width:min(540px,96vw);z-index:60;transform:translateX(103%);transition:.28s;background:#071a28;border-left:1px solid var(--line);overflow:auto}
+    .drawer.open{transform:none}
+    .toast{position:fixed;right:18px;bottom:18px;z-index:80;transform:translateY(140px);transition:.25s;background:#103b4c;border:1px solid var(--cyan);padding:12px 15px;max-width:360px;font-size:12px}
+    .toast.show{transform:none}
+    .stage{transition:.25s;border-left:3px solid #285166}.stage.active{border-left-color:var(--cyan);background:#103246}.stage.complete{border-left-color:var(--green)}.stage.warning{border-left-color:var(--amber)}
+    .progress-bar{height:6px;background:#082230;border:1px solid #285166}.progress-fill{height:100%;background:linear-gradient(90deg,#168d9b,#50d8e8);transition:width .35s}
+    .map-wrap{height:430px;position:relative;overflow:hidden;background:#06243a}
+    .map-svg{width:100%;height:100%}
+    .pulse{animation:pulse 2s infinite}.shift{animation:shift 1.3s ease-in-out}.scan{animation:scan 2s ease-in-out infinite}
+    @keyframes pulse{50%{opacity:.35}}@keyframes reveal{from{opacity:.1;transform:translateY(7px)}to{opacity:1;transform:none}}@keyframes scan{50%{transform:translateY(95px)}}@keyframes shift{50%{transform:translateX(32px) scale(.8)}}
+    @media(max-width:900px){.rail{position:fixed;top:58px;bottom:0;left:0;z-index:45;transform:translateX(-105%);transition:.25s}.rail.open{transform:none}.workspace{margin-left:0!important}.mobile-menu{display:inline-flex!important}.header-copy{display:none!important}}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/6c2ecc939521f244.data_sdk.js" type="text/javascript" integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
+  <script src="/_sdk/6bf4579cc4c25151.editing_sdk.js" type="text/javascript" integrity="sha512-12l4JxmokLfWaGAHNO68l5Ev8ahSshUKfuxnYUB8nkqSU1+WiCvimsPjHzPjw1k7DcHL+eZ+K9Bld04jnd5gkg=="></script>
+  <script src="/_sdk/ddcab3e45959c817.resizing_sdk.js" type="text/javascript" integrity="sha512-VAviUKfZVzugWBSeULYjSljTX+nb84wc6Zzbx5GQaQgh6X2ISSjXi8eIiCDGdwDh10esJMY0+QFQgUy9NcrTlQ=="></script>
+ </head>
+ <body data-template-id="__page-root" class="ocean-grid min-h-screen" style="background: rgb(6, 21, 34);">
+  <header class="sticky top-0 z-40 h-[58px] border-b border-[#1d475c] bg-[#071b29]/95 backdrop-blur px-3 flex items-center justify-between gap-3">
+   <div class="flex items-center gap-3 min-w-0"><button id="menuBtn" class="mobile-menu hidden btn p-2" aria-label="Open navigation"><i data-lucide="menu" class="w-4 h-4"></i></button>
+    <div class="w-7 h-7 border border-cyan-300/60 bg-cyan-300/10 flex items-center justify-center text-cyan-300">
+     <i data-lucide="waves" class="w-4 h-4"></i>
+    </div>
+    <div>
+     <div data-template-id="product-name" class="canva-text font-bold tracking-wide text-sm" style="color: rgb(232, 245, 248); font-weight: 700; font-style: normal; font-size: 16px;">AquaAssimilate</div>
+     <div data-template-id="header-status" class="canva-text header-copy tiny text-cyan-200" style="color: rgb(142, 223, 235); font-weight: 600; font-style: normal; font-size: 10px; letter-spacing: 0.12rem;">LIVE OCEAN INTELLIGENCE · DEMO SERVICE</div>
+    </div><span data-template-id="demo-badge" class="canva-tag badge sim" style="background: rgb(76, 58, 24); color: rgb(243, 201, 109); font-weight: 700; font-style: normal; font-size: 9px;">DEMO MODE · SIMULATED DATA</span>
+   </div>
+   <div class="flex items-center gap-2"><span class="header-copy tiny text-green-300"><span class="inline-block w-1.5 h-1.5 bg-green-300 rounded-full pulse"></span> CONTRACT READY</span> <button id="architectureBtn" class="btn header-copy"><i data-lucide="network" class="w-3 h-3"></i> Architecture</button> <button id="runSimulation" data-template-id="run-simulation" class="canva-button btn primary" style="background: rgb(22, 141, 155); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 12px;">RUN INCIDENT SIMULATION</button>
+   </div>
+  </header>
+  <aside id="rail" class="rail fixed top-[58px] left-0 bottom-0 w-[205px] bg-[#071a28] border-r border-[#1d475c] overflow-y-auto z-30">
+   <div class="p-3 border-b border-[#1d475c] tiny text-[#91aeba]">
+    OPERATIONAL VIEWS
+   </div>
+   <nav aria-label="Command centre navigation"><button class="nav-btn active" data-view="overview"><i data-lucide="layout-dashboard" class="w-4 h-4"></i>Overview</button> <button class="nav-btn" data-view="satellite"><i data-lucide="satellite" class="w-4 h-4"></i>Satellite</button> <button class="nav-btn" data-view="detection"><i data-lucide="scan-search" class="w-4 h-4"></i>Detection</button> <button class="nav-btn" data-view="twin"><i data-lucide="orbit" class="w-4 h-4"></i>Digital Twin</button> <button class="nav-btn" data-view="forecast"><i data-lucide="route" class="w-4 h-4"></i>Forecast</button> <button class="nav-btn" data-view="risk"><i data-lucide="shield-alert" class="w-4 h-4"></i>Risk &amp; Priority</button> <button class="nav-btn" data-view="response"><i data-lucide="siren" class="w-4 h-4"></i>Response</button> <button class="nav-btn" data-view="field"><i data-lucide="map-pin-check" class="w-4 h-4"></i>Field</button> <button class="nav-btn" data-view="reports"><i data-lucide="file-bar-chart" class="w-4 h-4"></i>Reports</button> <button class="nav-btn" data-view="models"><i data-lucide="brain-circuit" class="w-4 h-4"></i>Models</button> <button class="nav-btn" data-view="data"><i data-lucide="database" class="w-4 h-4"></i>Data</button>
+   </nav>
+   <div class="m-3 p-3 border border-[#285166] text-[11px] text-[#91aeba]">
+    <div class="text-cyan-200 tiny mb-2">
+     SCIENTIFIC INTEGRITY
+    </div> Potential floating marine plastic is not absolute identification. Outputs are probabilistic. Simulated values are not historical measurements. Production claims require trained validation data and real satellite and oceanographic integrations.
+   </div>
+  </aside>
+  <main class="workspace ml-[205px] w-full">
+   <section class="border-b border-[#1d475c] bg-[#081d2d]/90 flex overflow-x-auto">
+    <div class="min-w-[155px] p-3 border-r border-[#1d475c]">
+     <div class="label">
+      Potential patches <span class="badge sim">SIM</span>
+     </div><strong id="patchKpi" class="font-serif text-2xl">27</strong>
+    </div>
+    <div class="min-w-[155px] p-3 border-r border-[#1d475c]">
+     <div class="label">
+      Detection confidence
+     </div><strong id="confidenceKpi" class="font-serif text-2xl">84.7%</strong>
+    </div>
+    <div class="min-w-[155px] p-3 border-r border-[#1d475c]">
+     <div class="label">
+      Estimated area
+     </div><strong id="areaKpi" class="font-serif text-2xl">18.6 km²</strong>
+    </div>
+    <div class="min-w-[155px] p-3 border-r border-[#1d475c]">
+     <div class="label">
+      Environmental risk
+     </div><strong id="riskKpi" class="font-serif text-2xl text-amber-300">84 / 100</strong>
+    </div>
+    <div class="min-w-[155px] p-3">
+     <div class="label">
+      Assimilation
+     </div><strong id="assimKpi" class="text-cyan-300">READY</strong>
+    </div>
+   </section>
+   <div class="p-3 md:p-5">
+    <section id="overview" class="view active">
+     <div data-template-id="incident-banner" class="canva-banner panel border-l-4 border-l-[#f1b84b] p-3 mb-4 flex flex-wrap gap-3 items-center justify-between" style="background: rgb(11, 38, 55);">
+      <div>
+       <span class="badge sim">MSC ELSA 3 INCIDENT MODE</span>
+       <p data-template-id="incident-copy" class="canva-text text-sm mt-1" style="color: rgb(215, 233, 237); font-weight: 400; font-style: normal; font-size: 12px; line-height: 1.4;">MSC ELSA 3 INCIDENT MODE · Demonstration timeline using deterministic local observations, model predictions, and field feedback. No historical measurement or live incident feed is claimed.</p>
+      </div>
+      <div class="flex gap-2">
+       <button id="replayBtn" class="btn">Replay sequence</button><button id="resetBtn" class="btn">Reset demo</button>
+      </div>
+     </div>
+     <h1 data-template-id="overview-title" class="canva-text font-serif font-bold" style="color: rgb(232, 245, 248); font-weight: 700; font-style: normal; font-size: 30px;">MARINE INTELLIGENCE COMMAND CENTER</h1>
+     <p data-template-id="overview-subtitle" class="canva-text text-[#91aeba] mt-1" style="color: rgb(145, 174, 186); font-weight: 400; font-style: normal; font-size: 14px;">AI-powered potential debris intelligence, probabilistic drift forecasting, data assimilation, and explainable field response.</p>
+     <div class="grid grid-cols-1 xl:grid-cols-[1fr_290px] gap-4 mt-4">
+      <article data-template-id="story-card" class="canva-panel panel p-4" style="background: rgb(11, 38, 55);">
+       <div class="flex flex-wrap gap-2 items-center">
+        <span class="badge model">REAL INPUT</span><span class="text-cyan-300">→</span><span class="badge model">PROCESSING</span><span class="text-cyan-300">→</span><span class="badge model">INFERENCE</span><span class="text-cyan-300">→</span><span class="badge sim">FORECAST</span><span class="text-cyan-300">→</span><span class="badge sim">ASSIMILATION</span><span class="text-cyan-300">→</span><span class="badge field">FIELD RESPONSE</span>
+       </div>
+       <p data-template-id="innovation-statement" class="canva-text mt-3 text-cyan-100" style="color: rgb(216, 249, 253); font-weight: 500; font-style: normal; font-size: 15px; line-height: 1.4;">When new evidence contradicts a forecast, AquaAssimilate reweights the local digital twin, recalculates probabilistic movement, and creates an explainable field-priority recommendation.</p>
+      </article>
+      <article data-template-id="summary-card" class="canva-card panel p-4" style="background: rgb(11, 38, 55);">
+       <h2 data-template-id="summary-title" class="canva-text font-semibold" style="color: rgb(232, 245, 248); font-weight: 600; font-style: normal; font-size: 23px;">Operational summary</h2>
+       <p data-template-id="summary-copy" class="canva-text text-xs leading-5 text-[#b7ced5] mt-2" style="color: rgb(183, 206, 213); font-weight: 400; font-style: normal; font-size: 12px; line-height: 1.55;">The prototype accepts observation metadata, screens data quality, runs deterministic inference logic, stores field reports in a Canva Sheet, and demonstrates forecast correction through an explicit backend-ready contract.</p>
+      </article>
+     </div>
+     <div class="grid grid-cols-1 xl:grid-cols-[minmax(0,2fr)_minmax(280px,1fr)] gap-4 mt-4">
+      <section class="panel">
+       <div class="p-3 border-b border-[#1d475c] flex justify-between items-center gap-2">
+        <div>
+         <span class="label">Kerala — Southern Tamil Nadu / schematic region</span> <span class="badge sim">SIMULATED DATA</span>
+        </div><button id="mapTwinBtn" class="btn">Digital Twin</button>
+       </div>
+       <div class="map-wrap">
+        <svg class="map-svg" viewBox="0 0 900 470" role="img" aria-label="Schematic marine intelligence map"><defs>
+          <linearGradient id="sea" x1="0" x2="1">
+           <stop stop-color="#052b43"></stop>
+           <stop offset="1" stop-color="#0b4c65"></stop>
+          </linearGradient>
+          <filter id="glow">
+           <feGaussianBlur stdDeviation="3" result="b"></feGaussianBlur>
+           <feMerge>
+            <feMergeNode in="b"></feMergeNode>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+           </feMerge>
+          </filter>
+         </defs> <rect width="900" height="470" fill="url(#sea)"></rect> <path d="M700 0C680 50 694 87 663 123C633 160 652 194 620 232C590 269 607 302 573 342C552 366 559 415 532 470L900 470L900 0Z" fill="#173a37" stroke="#8bb08f" stroke-width="2"></path> <path d="M696 0C682 64 677 88 649 132C625 168 627 193 600 236C574 277 571 319 540 364C522 391 522 430 510 470" fill="none" stroke="#d8cd9d" stroke-width="3"></path> <ellipse cx="390" cy="195" rx="60" ry="32" fill="none" stroke="#50d8e8" opacity=".85"></ellipse> <ellipse cx="390" cy="195" rx="100" ry="61" fill="none" stroke="#50d8e8" opacity=".55"></ellipse> <ellipse cx="390" cy="195" rx="148" ry="89" fill="none" stroke="#50d8e8" opacity=".28"></ellipse> <path d="M390 195C448 220 480 266 544 345" fill="none" stroke="#f1b84b" stroke-width="2" stroke-dasharray="7 6"></path> <path d="M405 202C465 248 508 282 567 355" fill="none" stroke="#52cf9b" stroke-width="2" stroke-dasharray="5 5" id="correctedPath" opacity=".2"></path> <g id="mapParticles" fill="#88f5ff"></g> <circle cx="390" cy="195" r="10" fill="#f1b84b" stroke="#fff2ba" stroke-width="2" filter="url(#glow)"></circle> <circle cx="390" cy="195" r="20" fill="none" stroke="#f1b84b" opacity=".7">
+          <animate attributeName="r" values="15;28;15" dur="2s" repeatCount="indefinite"></animate>
+         </circle> <text x="410" y="187" fill="#f7f1d5" font-size="12">
+          Potential floating debris
+         </text> <text x="410" y="205" fill="#a9c7cf" font-size="10">
+          SIMULATED OBSERVATION • 13 nm offshore
+         </text> <text x="28" y="35" fill="#a6d6e0" font-size="13" letter-spacing="2">
+          ARABIAN SEA
+         </text> <text x="640" y="130" fill="#d8cd9d" font-size="11">
+          Kochi
+         </text><text x="578" y="300" fill="#d8cd9d" font-size="11">
+          Vizhinjam
+         </text><text x="540" y="388" fill="#d8cd9d" font-size="11">
+          Kanyakumari
+         </text>
+        </svg>
+        <div class="absolute bottom-3 left-3 panel p-2 text-[10px]">
+         <b class="text-amber-300">●</b> observation &nbsp; <b class="text-cyan-300">◯</b> 50/80/95% probability &nbsp; <b class="text-green-300">—</b> corrected trajectory
+        </div>
+       </div>
+      </section>
+      <aside class="panel p-4">
+       <div class="flex justify-between gap-2">
+        <span class="label">Detection intelligence</span><span class="badge model">MODEL PREDICTION</span>
+       </div>
+       <h2 data-template-id="detection-title" class="canva-text font-semibold mt-2" style="color: rgb(232, 245, 248); font-weight: 600; font-style: normal; font-size: 18px;">Potential Floating Marine Plastic</h2>
+       <p data-template-id="detection-note" class="canva-text tiny text-[#f1c96d] mt-1" style="color: rgb(241, 201, 109); font-weight: 600; font-style: normal; font-size: 10px;">Demonstration reconstruction — probabilistic model output</p>
+       <div class="grid grid-cols-2 gap-2 mt-4 text-xs">
+        <div class="border border-[#285166] p-2">
+         <span class="label">Confidence</span><b id="detConfidence" class="block text-lg text-cyan-200">84.7%</b>
+        </div>
+        <div class="border border-[#285166] p-2">
+         <span class="label">Estimated area</span><b id="detArea" class="block text-lg">18.6 km²</b>
+        </div>
+        <div class="border border-[#285166] p-2">
+         <span class="label">Relative density</span><b class="block">Moderate–high</b>
+        </div>
+        <div class="border border-[#285166] p-2">
+         <span class="label">Environmental risk</span><b id="detRisk" class="block text-amber-300">84 / 100</b>
+        </div>
+       </div>
+       <dl class="mt-4 space-y-2 text-xs text-[#b8d0d7]">
+        <div class="flex justify-between gap-2">
+         <dt>
+          Movement
+         </dt>
+         <dd id="movementValue">
+          SE · 0.42 m/s
+         </dd>
+        </div>
+        <div class="flex justify-between gap-2">
+         <dt>
+          Arrival probability
+         </dt>
+         <dd id="arrivalValue">
+          31% / 24H
+         </dd>
+        </div>
+        <div class="flex justify-between gap-2">
+         <dt>
+          Forecast uncertainty
+         </dt>
+         <dd id="uncertaintyValue">
+          58 km
+         </dd>
+        </div>
+        <div class="flex justify-between gap-2">
+         <dt>
+          Source state
+         </dt>
+         <dd>
+          SIMULATED DATA
+         </dd>
+        </div>
+       </dl><button id="overviewAssimilateBtn" class="btn primary w-full mt-4">Open assimilation event</button>
+      </aside>
+     </div>
+     <section class="panel mt-4 p-3">
+      <div class="flex flex-wrap justify-between gap-2 items-center">
+       <div>
+        <span class="label">Ensemble forecast timeline</span>
+        <p class="text-xs text-[#91aeba]">Probability regions are seeded deterministic demonstration values.</p>
+       </div>
+       <div id="horizonBtns" class="flex gap-1">
+        <button class="btn horizon" data-h="6">6H</button><button class="btn horizon" data-h="12">12H</button><button class="btn horizon active primary" data-h="24">24H</button><button class="btn horizon" data-h="48">48H</button><button class="btn horizon" data-h="72">72H</button>
+       </div>
+      </div>
+      <div id="horizonDetail" class="grid grid-cols-2 md:grid-cols-5 gap-2 mt-3 text-xs"></div>
+     </section>
+     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+      <section class="panel p-4 lg:col-span-2">
+       <div class="flex justify-between">
+        <h2 class="font-semibold">Global activity / event console</h2><span class="badge sim">SIMULATION LOG</span>
+       </div>
+       <div id="eventConsole" class="mt-3 h-[180px] overflow-auto font-mono text-[11px] space-y-2 text-[#b6d0d8]" aria-live="polite"></div>
+      </section>
+      <section class="panel p-4">
+       <h2 class="font-semibold">Hotspots &amp; alerts</h2>
+       <div id="hotspotFeed" class="mt-3 space-y-2 text-xs"></div>
+      </section>
+     </div>
+    </section>
+    <section id="satellite" class="view">
+     <h1 class="font-serif text-2xl font-bold">Satellite Intelligence <span class="badge sim">SIMULATED DATA</span></h1>
+     <p class="text-sm text-[#91aeba] mt-1">Import an observation or use deterministic local demo values. No live satellite service is connected.</p>
+     <div class="grid grid-cols-1 xl:grid-cols-[1.08fr_.92fr] gap-4 mt-4">
+      <section class="panel p-4">
+       <div class="flex justify-between flex-wrap gap-2">
+        <h2 class="font-semibold">Real input layer</h2><span id="observationSource" class="badge sim">SIMULATED DATA</span>
+       </div>
+       <div class="relative mt-3 h-[245px] overflow-hidden border border-[#285166]"><img data-template-id="satellite-image" class="canva-image w-full h-full object-cover opacity-70" loading="lazy" src="https://images.pexels.com/photos/1856183/pexels-photo-1856183.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Dynamic aerial photograph of ocean waves with foamy textures, showcasing sea patterns.">
+        <div class="absolute inset-0 bg-gradient-to-br from-cyan-400/10 via-transparent to-amber-300/15"></div>
+        <div class="absolute border-2 border-amber-300/80 w-28 h-20 left-[42%] top-[42%] scan"></div><span class="absolute left-3 bottom-3 badge model">DEMO RECONSTRUCTION</span>
+       </div>
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3 text-xs"><label>Observation upload/import<input id="observationFile" type="file" accept="image/*,.tif,.tiff,.geojson"></label> <label>Observation date<input id="obsDate" type="date" value="2026-09-28"></label> <label>Location<input id="obsLocation" value="9.931°N, 75.982°E — Kerala offshore"></label> <label>Acquisition time<input id="obsTime" type="time" value="14:32"></label> <label>Cloud cover %<input id="cloudCover" type="number" min="0" max="100" value="14"></label> <label>Spatial resolution<select id="resolution"><option value="10">10 m</option><option value="20">20 m</option><option value="60">60 m</option></select></label> <label>Sun glint<select id="sunGlint"><option value="low">Low</option><option value="moderate" selected="">Moderate</option><option value="high">High</option></select></label> <label>Geolocation quality<select id="geoQuality"><option value="good" selected="">Good</option><option value="poor">Poor</option></select></label> <label>Wave foam flag<select id="foamFlag"><option value="no" selected="">Not detected</option><option value="yes">Likely present</option></select></label> <label>Imagery age<select id="imageAge"><option value="fresh" selected="">&lt; 24 hours</option><option value="old">Over 72 hours</option></select></label>
+       </div><button id="analyzeBtn" class="btn primary mt-4"><i data-lucide="scan-search" class="w-3 h-3"></i> Analyze observation</button>
+      </section>
+      <section class="panel p-4">
+       <div class="flex justify-between gap-2">
+        <h2 class="font-semibold">Actual processing flow</h2><span id="analysisState" class="badge model">READY</span>
+       </div>
+       <div id="pipeline" class="mt-3 space-y-2 text-xs"></div>
+       <div class="border-t border-[#1d475c] mt-4 pt-3">
+        <div class="flex justify-between">
+         <h3 class="font-semibold">Inference adapter result</h3><span class="badge model">DETERMINISTIC DEMO</span>
+        </div>
+        <div id="inferenceResult" class="mt-3 text-xs text-[#b6d0d8]">
+         Awaiting an observation analysis.
+        </div>
+       </div>
+      </section>
+     </div>
+    </section>
+    <section id="detection" class="view">
+     <h1 class="font-serif text-2xl font-bold">Detection Register</h1>
+     <p class="text-sm text-[#91aeba]">Cautious classifications and DEMO METRICS. Potential floating plastic is never an absolute identification.</p>
+     <div class="panel mt-4 overflow-auto">
+      <table class="w-full text-xs text-left">
+       <thead class="bg-[#103246] text-[#b6d5dc]">
+        <tr>
+         <th class="p-3">ID</th>
+         <th>Class</th>
+         <th>Probability</th>
+         <th>Area</th>
+         <th>Density</th>
+         <th>Fragmentation</th>
+         <th>Quality</th>
+         <th>State</th>
+         <th>Provenance</th>
+        </tr>
+       </thead>
+       <tbody id="detectionTable"></tbody>
+      </table>
+     </div>
+    </section>
+    <section id="twin" class="view">
+     <h1 class="font-serif text-2xl font-bold">Digital Twin <span class="badge model">MODEL PREDICTION</span></h1>
+     <p class="text-sm text-[#91aeba]">A deterministic, assimilated representation of debris state, forcing, uncertainty, and provenance.</p>
+     <div id="twinMetrics" class="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-4"></div>
+     <section class="panel p-4 mt-4">
+      <div class="flex justify-between flex-wrap gap-2">
+       <div>
+        <h2 class="font-serif text-xl font-bold">FORECAST ASSIMILATION EVENT</h2>
+        <p class="text-xs text-[#91aeba]">Simplified distance-based observation likelihood, reweighting, and resampling.</p>
+       </div><span class="badge sim">DEMONSTRATION VALUES</span>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-4">
+       <article class="border border-[#285166] p-3">
+        <span class="label">Before</span>
+        <h3 class="font-semibold mt-1">Predicted debris centre</h3>
+        <div class="h-32 mt-3 bg-[#062b40] relative overflow-hidden">
+         <div class="absolute border border-cyan-300 rounded-full w-28 h-16 left-12 top-8"></div>
+         <div class="absolute border border-cyan-300/50 rounded-full w-44 h-24 left-4 top-4"></div>
+        </div>
+        <p class="text-xs mt-3">Beach A <b class="text-amber-300">72%</b> · Beach B <b>18%</b><br>
+         Uncertainty: 58 km</p>
+       </article>
+       <article class="border border-[#50d8e8] p-3 bg-cyan-300/5">
+        <span class="label">New observation</span>
+        <h3 class="font-semibold mt-1">12 km east of predicted centre</h3>
+        <div class="h-32 mt-3 bg-[#062b40] relative">
+         <div class="absolute w-4 h-4 rounded-full bg-amber-300 left-[65%] top-[44%] pulse"></div>
+         <div class="absolute left-[15%] top-[22%] tiny text-cyan-200">
+          confidence 84.7% · quality 0.82
+         </div>
+         <div class="absolute left-[15%] top-[48%] tiny text-[#b6d5dc]">
+          distance likelihood 0.74
+         </div>
+         <div class="absolute left-[15%] top-[68%] tiny text-[#b6d5dc]">
+          SIMULATED OBSERVATION
+         </div>
+        </div><button id="assimilateBtn" class="btn primary w-full mt-3">ASSIMILATE OBSERVATION</button>
+       </article>
+       <article class="border border-[#285166] p-3">
+        <span class="label">After</span>
+        <h3 class="font-semibold mt-1">Corrected forecast</h3>
+        <div class="h-32 mt-3 bg-[#062b40] relative overflow-hidden">
+         <div id="afterContour" class="absolute border border-[#52cf9b] rounded-full w-20 h-12 left-[55%] top-10"></div>
+        </div>
+        <p class="text-xs mt-3">Beach A <b id="beachA">31%</b> · Beach B <b id="beachB" class="text-[#52cf9b]">81%</b><br>
+         Uncertainty: <span id="afterUncertainty">58 km</span></p>
+       </article>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-3 text-xs">
+       <div class="border border-[#285166] p-2">
+        <span class="label">Forecast shift</span><b class="block">34 km</b>
+       </div>
+       <div class="border border-[#285166] p-2">
+        <span class="label">Uncertainty</span><b class="block text-[#52cf9b]">−27%</b>
+       </div>
+       <div class="border border-[#285166] p-2">
+        <span class="label">Updated priority</span><b class="block">Beach B</b>
+       </div>
+       <div class="border border-[#285166] p-2">
+        <span class="label">Likelihood method</span><b class="block">Distance × quality</b>
+       </div>
+      </div>
+      <p id="assimilationHelper" class="text-cyan-100 text-sm mt-3">Ready to use the new observation.</p>
+     </section>
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+      <section class="panel p-4">
+       <h2 class="font-semibold">Data lineage</h2>
+       <div id="lineageList" class="mt-3 text-xs space-y-2"></div>
+      </section>
+      <section class="panel p-4">
+       <h2 class="font-semibold">Assimilation history</h2>
+       <div id="assimHistory" class="mt-3 text-xs space-y-2"></div>
+      </section>
+     </div>
+    </section>
+    <section id="forecast" class="view">
+     <h1 class="font-serif text-2xl font-bold">Ensemble Forecast Lab</h1>
+     <p class="text-sm text-[#91aeba]">Seeded particles combine current, windage, and diffusion. This is a local deterministic demonstration, not a live ocean forecast.</p>
+     <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_.8fr] gap-4 mt-4">
+      <section class="panel p-4">
+       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs"><label>Particle count<select id="particleCount"><option value="500">500</option><option value="1000" selected="">1,000</option><option value="2000">2,000</option></select></label> <label>Forecast horizon<select id="duration"><option value="6">6H</option><option value="12">12H</option><option value="24">24H</option><option value="48" selected="">48H</option><option value="72">72H</option></select></label> <label>Current influence <span id="currentVal">70</span>%<input id="currentInfluence" type="range" min="0" max="100" value="70"></label> <label>Windage <span id="windVal">42</span>%<input id="windInfluence" type="range" min="0" max="100" value="42"></label> <label>Diffusion<select id="diffusion"><option value="low">Low</option><option value="medium" selected="">Medium</option><option value="high">High</option></select></label>
+       </div><button id="forecastRunBtn" class="btn primary mt-4">Run seeded ensemble</button>
+       <div class="mt-4 h-64 border border-[#285166] bg-[#062b40]">
+        <canvas id="forecastCanvas" class="w-full h-full" aria-label="Canvas forecast particle trajectories"></canvas>
+       </div>
+      </section>
+      <aside class="panel p-4">
+       <h2 class="font-semibold">Forecast interpretation</h2>
+       <div id="forecastResults" class="mt-3 text-xs space-y-3"></div>
+       <div class="border-l-2 border-[#f1b84b] bg-[#4c3a18]/30 p-2 text-xs">
+        50%, 80%, and 95% regions represent relative ensemble probability, not certainty.
+       </div>
+      </aside>
+     </div>
+     <div id="forecastCards" class="grid grid-cols-1 md:grid-cols-5 gap-3 mt-4"></div>
+    </section>
+    <section id="risk" class="view">
+     <h1 class="font-serif text-2xl font-bold">Environmental Risk Engine</h1>
+     <p class="text-sm text-[#91aeba]">Environmental Risk remains separate from Detection Confidence. All values are DEMO METRICS.</p>
+     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+      <section class="panel p-5 text-center">
+       <span class="label">Environmental risk</span>
+       <div class="font-serif text-6xl text-amber-300 mt-3">
+        84<span class="text-lg"> / 100</span>
+       </div><span class="badge sim mt-3">DEMONSTRATION VALUE</span>
+      </section>
+      <section class="panel p-4 lg:col-span-2">
+       <h2 class="font-semibold">Explainable contributing factors</h2>
+       <div id="riskFactors" class="grid grid-cols-2 md:grid-cols-3 gap-2 mt-3 text-xs"></div>
+      </section>
+     </div>
+     <section class="panel p-4 mt-4">
+      <h2 class="font-semibold">Priority hotspots and field recommendations</h2>
+      <div id="priorityZones" class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3"></div>
+     </section>
+    </section>
+    <section id="response" class="view">
+     <h1 class="font-serif text-2xl font-bold">Response Coordination</h1>
+     <p class="text-sm text-[#91aeba]">Recommendations are explainable demonstration support, not a claim of authority action.</p>
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+      <section class="panel p-4">
+       <h2 class="font-semibold">Recommended field actions</h2>
+       <div id="responseList" class="mt-3 space-y-2"></div>
+      </section>
+      <section class="panel p-4">
+       <h2 class="font-semibold">Alert system</h2>
+       <div id="alertList" class="mt-3 space-y-2 text-xs"></div>
+      </section>
+     </div>
+    </section>
+    <section id="field" class="view">
+     <h1 class="font-serif text-2xl font-bold">Field Verification &amp; Cleanup Feedback</h1>
+     <p class="text-sm text-[#91aeba]">Reports save to a Canva Sheet and are locally reflected in the map feedback count, event log, provenance chain, and assimilation queue.</p>
+     <div class="grid grid-cols-1 lg:grid-cols-[.9fr_1.1fr] gap-4 mt-4">
+      <form id="fieldForm" class="panel p-4">
+       <h2 class="font-semibold">Create field report <span class="badge field">FIELD VERIFIED DATA</span></h2>
+       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs"><label>Report type<select id="reportType"><option>Field verification</option><option>Cleanup observation</option></select></label> <label>Verification status<select id="fieldStatus"><option>Not Inspected</option><option>Verified</option></select></label> <label>Location<input id="fieldLocation" required="" value="Kovalam Beach"></label> <label>Timestamp<input id="fieldTimestamp" type="datetime-local"></label> <label>Latitude<input id="fieldLat" type="number" step="0.0001" required="" value="8.4001"></label> <label>Longitude<input id="fieldLon" type="number" step="0.0001" required="" value="76.9785"></label> <label>Debris class<select id="fieldClass"><option>Potential Plastic</option><option>Other Floating Debris</option><option>Unknown</option></select></label> <label>Estimated quantity<input id="fieldQuantity" required="" value="Low / scattered"></label> <label class="sm:col-span-2">Coverage<input id="fieldCoverage" required="" value="120 m shoreline"></label>
+       </div><label class="text-xs block mt-3">Notes<textarea id="fieldNotes" rows="3">Demo report pending visual field verification.</textarea></label> <button data-template-id="field-submit" class="canva-button btn primary w-full mt-3" type="submit" style="background: rgb(22, 141, 155); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 12px;">Submit field report</button>
+      </form>
+      <section class="panel p-4">
+       <div class="flex justify-between">
+        <h2 class="font-semibold">Reports &amp; feedback queue</h2><span id="fieldLoadState" class="badge model">LOADING</span>
+       </div>
+       <div id="fieldReports" class="mt-3 space-y-2 text-xs"></div>
+      </section>
+     </div>
+    </section>
+    <section id="reports" class="view">
+     <h1 class="font-serif text-2xl font-bold">Operational Reports</h1>
+     <div class="panel p-4 mt-4">
+      <div class="flex flex-wrap gap-3 items-end">
+       <label class="text-xs">Report type<select id="reportSelect" class="mt-1"><option>Incident report</option><option>Hotspot report</option><option>Forecast report</option><option>Field verification report</option></select></label><button id="generateReport" class="btn primary">Generate report</button><button class="btn exportBtn" data-format="CSV">CSV</button><button class="btn exportBtn" data-format="GeoJSON">GeoJSON</button><button class="btn exportBtn" data-format="PNG">PNG</button><button class="btn exportBtn" data-format="PDF">PDF</button>
+      </div>
+      <div id="reportPreview" class="mt-4 border border-[#285166] p-4 text-xs text-[#b6d0d8]">
+       Generate an in-app report preview containing observation, detection, confidence, forecast, risk, priority, field observations, provenance, and audit history.
+      </div>
+     </div>
+    </section>
+    <section id="models" class="view">
+     <h1 class="font-serif text-2xl font-bold">Model Registry &amp; Evaluation</h1>
+     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+      <section class="panel p-4">
+       <span class="label">Inference adapter</span>
+       <h2 class="font-semibold text-xl mt-2">AquaAssimilate-v1.0</h2>
+       <p class="text-xs text-[#91aeba] mt-2">Dataset v0.8 · deterministic demo inference mode · replaceable production adapter.</p>
+       <div class="border-l-2 border-amber-300 bg-[#4c3a18]/30 mt-3 p-2 text-xs">
+        A production deployment requires trained validation data and external imagery, ocean, weather, and geospatial integrations.
+       </div>
+      </section>
+      <section class="panel p-4 lg:col-span-2">
+       <h2 class="font-semibold">DEMO METRICS</h2>
+       <div id="modelMetrics" class="grid grid-cols-2 md:grid-cols-4 gap-2 mt-3 text-xs"></div>
+       <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-2 text-center text-xs">
+        <div class="border border-[#285166] p-3">
+         U-Net<br><span class="text-[#91aeba]">Segmentation</span>
+        </div>
+        <div class="border border-[#285166] p-3">
+         Lightweight classifier<br><span class="text-[#91aeba]">Classes</span>
+        </div>
+        <div class="border border-[#285166] p-3">
+         Random Forest / XGBoost<br><span class="text-[#91aeba]">Baseline</span>
+        </div>
+        <div class="border border-[#285166] p-3">
+         Adapter contract<br><span class="text-[#91aeba]">Replaceable</span>
+        </div>
+       </div>
+      </section>
+     </div>
+    </section>
+    <section id="data" class="view">
+     <h1 class="font-serif text-2xl font-bold">Data, Provenance &amp; Quality</h1>
+     <p class="text-sm text-[#91aeba] mt-1">DEMO SERVICE / BACKEND-READY CONTRACT. This standalone prototype has no real backend connection.</p>
+     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4">
+      <section class="panel p-4">
+       <h2 class="font-semibold">Local repository abstraction</h2>
+       <div id="repositoryList" class="mt-3 grid grid-cols-2 gap-2 text-xs"></div>
+      </section>
+      <section class="panel p-4">
+       <h2 class="font-semibold">Provenance &amp; audit events</h2>
+       <div id="auditList" class="mt-3 space-y-2 text-xs"></div>
+      </section>
+     </div>
+    </section>
+   </div>
+  </main>
+  <aside id="architectureDrawer" class="drawer p-5" aria-label="Architecture information"><button class="btn float-right closeDrawer">Close</button>
+   <h2 class="font-serif text-2xl font-bold">Future architecture contract</h2>
+   <p class="text-xs text-[#91aeba] mt-2">DEMO SERVICE / BACKEND-READY CONTRACT. Mock functions use these API-style paths locally; no real backend is connected.</p>
+   <div id="apiCards" class="grid gap-2 mt-5 text-xs"></div>
+  </aside>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script>
+    const state = {
+      horizon: 24, particles: 1000, assimilated: false, simulationRunning: false,
+      records: [], quality: .82, confidence: .847, detectionClass: "Potential Plastic",
+      forecast: { arrival: 31, spread: 28, uncertainty: 58, beachA: 72, beachB: 18 }
+    };
+
+    const pipelineSteps = [
+      ["ingest", "Ingest observation", "Validate local file metadata or deterministic demo record."],
+      ["quality", "Quality assessment", "Assess clouds, glint, foam, age, resolution, and geolocation."],
+      ["spectral", "Spectral feature extraction", "Derive deterministic RGB/NIR-style proxy evidence."],
+      ["segment", "Detection / segmentation", "Generate a cautious potential-patch mask."],
+      ["classify", "Classification", "Compare potential plastic, algae, foam, vessel, and unknown classes."],
+      ["confidence", "Confidence estimation", "Calibrate confidence using evidence and image quality."],
+      ["geo", "Geospatial conversion", "Convert patch result to a schematic geospatial footprint."]
+    ];
+
+    const service = {
+      satellite: async () => ({ endpoint:"GET /satellite", source:"local simulated observation" }),
+      analyze: async (input) => new Promise(r => setTimeout(() => r(input), 420)),
+      forecast: async () => new Promise(r => setTimeout(() => r({ endpoint:"POST /forecast/run" }), 500)),
+      assimilate: async () => new Promise(r => setTimeout(() => r({ endpoint:"POST /assimilation/run", id:"AE-0192" }), 650)),
+      report: async () => new Promise(r => setTimeout(() => r({ endpoint:"POST /reports/generate", id:"RPT-0528" }), 350))
+    };
+
+    function toast(message) {
+      const node = document.getElementById("toast");
+      node.textContent = message;
+      node.classList.add("show");
+      setTimeout(() => node.classList.remove("show"), 3200);
+    }
+
+    function addEvent(message, time = new Date().toISOString().slice(11,19)) {
+      const line = document.createElement("div");
+      line.innerHTML = `<span class="text-cyan-300">[${time}]</span> ${message}`;
+      document.getElementById("eventConsole").prepend(line);
+      renderAudit();
+    }
+
+    function showView(id) {
+      document.querySelectorAll(".view").forEach(view => view.classList.toggle("active", view.id === id));
+      document.querySelectorAll(".nav-btn").forEach(btn => btn.classList.toggle("active", btn.dataset.view === id));
+      document.getElementById("rail").classList.remove("open");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function renderMapParticles() {
+      const root = document.getElementById("mapParticles");
+      let markup = "";
+      for (let i = 0; i < 100; i++) {
+        const x = 270 + ((i * 31) % 220);
+        const y = 130 + ((i * 47) % 140);
+        markup += `<circle cx="${x}" cy="${y}" r="${1 + (i % 3) * .4}" opacity="${.25 + (i % 5) * .12}"/>`;
+      }
+      root.innerHTML = markup;
+    }
+
+    function renderPipeline(statuses = {}) {
+      const root = document.getElementById("pipeline");
+      root.innerHTML = "";
+      pipelineSteps.forEach(([id, title, note]) => {
+        const value = statuses[id] || "pending";
+        const row = document.createElement("div");
+        row.className = `stage border border-[#285166] p-2 ${value}`;
+        row.innerHTML = `<div class="flex justify-between gap-2"><b>${title}</b><span class="badge ${value === "complete" ? "real" : value === "warning" ? "sim" : value === "active" ? "model" : ""}">${value.toUpperCase()}</span></div><p class="text-[#91aeba] mt-1">${note}</p>`;
+        root.appendChild(row);
+      });
+    }
+
+    function qualityAssessment() {
+      const cloud = +document.getElementById("cloudCover").value || 0;
+      const resolution = +document.getElementById("resolution").value;
+      const glint = document.getElementById("sunGlint").value;
+      const geo = document.getElementById("geoQuality").value;
+      const foam = document.getElementById("foamFlag").value;
+      const age = document.getElementById("imageAge").value;
+      let quality = .92 - cloud / 180 - (resolution >= 60 ? .20 : resolution >= 20 ? .07 : 0) - (glint === "high" ? .20 : glint === "moderate" ? .08 : 0) - (geo === "poor" ? .20 : 0) - (foam === "yes" ? .15 : 0) - (age === "old" ? .18 : 0);
+      quality = Math.max(.12, Math.min(.92, quality));
+      const reasons = [];
+      if (cloud > 35) reasons.push("cloud cover");
+      if (glint === "high") reasons.push("sun glint");
+      if (foam === "yes") reasons.push("wave foam");
+      if (age === "old") reasons.push("old imagery");
+      if (resolution >= 60) reasons.push("low resolution");
+      if (geo === "poor") reasons.push("poor geolocation");
+      return { quality, reasons };
+    }
+
+    async function analyzeObservation(button) {
+      const file = document.getElementById("observationFile").files[0];
+      document.getElementById("observationSource").textContent = file ? "FIELD SUPPLIED INPUT" : "SIMULATED DATA";
+      document.getElementById("observationSource").className = `badge ${file ? "field" : "sim"}`;
+      button.disabled = true;
+      document.getElementById("analysisState").textContent = "PROCESSING";
+      const statuses = {};
+      for (const [id] of pipelineSteps) {
+        statuses[id] = "active";
+        renderPipeline(statuses);
+        await service.analyze();
+        const qa = qualityAssessment();
+        statuses[id] = (id === "quality" && qa.reasons.length) ? "warning" : "complete";
+        renderPipeline(statuses);
+      }
+      const qa = qualityAssessment();
+      const low = qa.quality < .55 || qa.reasons.length >= 3;
+      state.quality = qa.quality;
+      state.confidence = low ? .38 : Math.min(.90, .56 + qa.quality * .35);
+      state.detectionClass = low ? "UNKNOWN / LOW CONFIDENCE" : "Potential Floating Marine Plastic";
+      document.getElementById("analysisState").textContent = low ? "REVIEW NEEDED" : "COMPLETE";
+      document.getElementById("detConfidence").textContent = `${(state.confidence * 100).toFixed(1)}%`;
+      document.getElementById("confidenceKpi").textContent = `${(state.confidence * 100).toFixed(1)}%`;
+      document.getElementById("inferenceResult").innerHTML = `
+        <div class="grid grid-cols-2 gap-2">
+          <div class="border border-[#285166] p-2"><span class="label">Class</span><b class="block mt-1 ${low ? "text-amber-300" : "text-cyan-200"}">${state.detectionClass}</b></div>
+          <div class="border border-[#285166] p-2"><span class="label">Quality score</span><b class="block mt-1">${qa.quality.toFixed(2)}</b></div>
+          <div class="border border-[#285166] p-2"><span class="label">Class probabilities</span><b class="block mt-1">Plastic ${(state.confidence*100).toFixed(0)}% · algae 10% · foam 8%</b></div>
+          <div class="border border-[#285166] p-2"><span class="label">DEMO METRICS</span><b class="block mt-1">18.6 km² · moderate-high density · medium fragmentation</b></div>
+        </div>
+        <p class="mt-3 ${low ? "text-amber-300" : "text-[#b6d0d8]"}">${low ? `UNKNOWN / LOW CONFIDENCE because of ${qa.reasons.join(", ")}. No plastic class is forced.` : "Cautious probabilistic result. U-Net-style segmentation plus classifier and RF/XGBoost baseline adapter agreement."}</p>`;
+      button.disabled = false;
+      addEvent(`Observation analysed: ${state.detectionClass}`);
+      toast(low ? "Low-quality handling returned UNKNOWN / LOW CONFIDENCE." : "Deterministic inference completed with probabilistic evidence.");
+      renderDetectionTable();
+    }
+
+    function horizonData(h) {
+      return {
+        6:[8,9,"High","Current"],
+        12:[14,16,"High","Current"],
+        24:[31,28,"Moderate","Current + wind"],
+        48:[58,47,"Moderate","Wind + waves"],
+        72:[81,76,"Lower","Wind + diffusion"]
+      }[h];
+    }
+
+    function renderHorizon() {
+      const [arrival, spread, confidence, forcing] = horizonData(state.horizon);
+      document.getElementById("arrivalValue").textContent = `${arrival}% / ${state.horizon}H`;
+      document.getElementById("horizonDetail").innerHTML = [
+        ["Horizon", `${state.horizon}H`], ["Arrival probability", `${arrival}%`], ["Forecast spread", `${spread} km`], ["Confidence", confidence], ["Dominant forcing", forcing]
+      ].map(([a,b]) => `<div class="border border-[#285166] p-2"><span class="label">${a}</span><b class="block mt-1 ${a === "Arrival probability" ? "text-cyan-200" : ""}">${b}</b></div>`).join("");
+      document.querySelectorAll(".horizon").forEach(btn => btn.classList.toggle("primary", +btn.dataset.h === state.horizon));
+    }
+
+    function renderDetectionTable() {
+      const rows = [
+        ["DET-021", state.detectionClass, `${(state.confidence*100).toFixed(1)}%`, "18.6 km²", "Moderate-high", "Medium", `${state.quality.toFixed(2)} quality`, "Model prediction", "SAT-551"],
+        ["DET-022", "Unknown", "42.0%", "2.1 km²", "Low", "High", "Review needed", "Needs review", "SAT-548"],
+        ["DET-023", "Seaweed / Algae", "77.2%", "5.4 km²", "Moderate", "Low", "High", "Model prediction", "SAT-551"]
+      ];
+      document.getElementById("detectionTable").innerHTML = rows.map(row => `<tr class="border-t border-[#1d475c]">${row.map((v,i) => `<td class="p-3 ${i === 2 ? "text-cyan-200" : ""}">${v}</td>`).join("")}</tr>`).join("");
+    }
+
+    function renderForecastCards() {
+      document.getElementById("forecastCards").innerHTML = [6,12,24,48,72].map(h => {
+        const [arrival, spread,, forcing] = horizonData(h);
+        return `<div class="panel p-3 text-xs"><span class="label">${h}H forecast</span><b class="block text-xl text-cyan-200 mt-2">${arrival}%</b><p class="mt-2">Beaching probability<br>Spread ${spread} km<br>${forcing}</p></div>`;
+      }).join("");
+    }
+
+    function drawForecast() {
+      const canvas = document.getElementById("forecastCanvas");
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = Math.max(1, Math.floor(rect.width * devicePixelRatio));
+      canvas.height = Math.max(1, Math.floor(rect.height * devicePixelRatio));
+      const ctx = canvas.getContext("2d");
+      ctx.scale(devicePixelRatio, devicePixelRatio);
+      const w = rect.width, h = rect.height;
+      const current = +document.getElementById("currentInfluence").value / 100;
+      const wind = +document.getElementById("windInfluence").value / 100;
+      const diffusion = document.getElementById("diffusion").value === "high" ? 1.5 : document.getElementById("diffusion").value === "low" ? .55 : 1;
+      const count = +document.getElementById("particleCount").value;
+      const horizon = +document.getElementById("duration").value;
+      ctx.clearRect(0,0,w,h);
+      ctx.fillStyle="#062b40";ctx.fillRect(0,0,w,h);
+      [[.18,"rgba(80,216,232,.16)"],[.32,"rgba(80,216,232,.1)"],[.47,"rgba(80,216,232,.055)"]].forEach(([scale,color]) => { ctx.beginPath(); ctx.ellipse(w*.48,h*.48,w*scale,h*scale*.55,0,0,Math.PI*2);ctx.strokeStyle=color;ctx.lineWidth=2;ctx.stroke(); });
+      const renderCount = Math.min(320, Math.max(70, Math.round(count / 6)));
+      for (let i=0;i<renderCount;i++) {
+        const sx = w*.24 + ((i*47)%100)/100*w*.28;
+        const sy = h*.32 + ((i*71)%100)/100*h*.32;
+        const jitterX = (((i*13)%31)-15) * diffusion;
+        const jitterY = (((i*19)%29)-14) * diffusion;
+        const ex = sx + (w*.25*current + w*.14*wind)*(horizon/72) + jitterX;
+        const ey = sy + (h*.22*current - h*.1*wind)*(horizon/72) + jitterY;
+        ctx.beginPath();ctx.moveTo(sx,sy);ctx.quadraticCurveTo((sx+ex)/2,sy-8+jitterY,ex,ey);ctx.strokeStyle=`rgba(136,245,255,${.12+(i%5)*.06})`;ctx.lineWidth=1;ctx.stroke();
+        ctx.fillStyle="rgba(136,245,255,.75)";ctx.fillRect(ex,ey,1.8,1.8);
+      }
+      ctx.fillStyle="#d7eff5";ctx.font="11px Work Sans";ctx.fillText("50% / 80% / 95% probability regions · seeded ensemble",12,h-14);
+      const arrival = Math.min(91, Math.round(18 + horizon*.55 + wind*12 + current*8));
+      const spread = Math.round(14 + horizon*.65*diffusion + wind*7);
+      document.getElementById("forecastResults").innerHTML = `<div class="border border-[#285166] p-3"><span class="label">Beaching probability</span><b class="block text-xl text-cyan-200 mt-1">${arrival}% / ${horizon}H</b></div><div class="border border-[#285166] p-3"><span class="label">Forecast spread</span><b class="block mt-1">${spread} km</b></div><div class="border border-[#285166] p-3"><span class="label">Uncertainty</span><b class="block mt-1">${Math.round(42 + spread*.45)} km</b></div><div class="text-[#91aeba]">Current ${Math.round(current*100)}% · windage ${Math.round(wind*100)}% · diffusion ${diffusion === 1.5 ? "high" : diffusion === .55 ? "low" : "medium"} · ${count.toLocaleString()} seeded particles</div>`;
+    }
+
+    async function runForecast(button) {
+      button.disabled = true; button.textContent = "RUNNING ENSEMBLE…";
+      await service.forecast();
+      drawForecast();
+      button.disabled = false; button.textContent = "Run seeded ensemble";
+      addEvent("Ocean and weather forcing fused; seeded ensemble forecast generated");
+      toast("Forecast updated from deterministic current, windage, and diffusion controls.");
+    }
+
+    function renderTwin() {
+      const values = [
+        ["Debris centre","9.931°N · 75.982°E"],["Spatial extent","18.6 km²"],["Movement","SE · 0.42 m/s"],["Particle ensemble","1,000 seeded"],["Uncertainty",`${state.assimilated ? 42 : 58} km`],["Priority",state.assimilated ? "Beach B" : "Beach A"],["Assimilation",state.assimilated ? "AE-0192 complete" : "Ready"],["Field feedback",`${state.records.length} report(s)`]
+      ];
+      document.getElementById("twinMetrics").innerHTML = values.map(([a,b]) => `<div class="panel p-3"><span class="label">${a}</span><b class="block text-sm mt-1">${b}</b></div>`).join("");
+      document.getElementById("lineageList").innerHTML = [
+        "Source observation SAT-551 · SIMULATED DATA",
+        "Ocean/current forcing OSC-DEMO-01 · MODEL PREDICTION",
+        "Wind/wave forcing WND-WAV-DEMO · MODEL PREDICTION",
+        "Model AquaAssimilate-v1.0 · dataset v0.8",
+        `Forecast FORECAST-2048 · ${state.assimilated ? "corrected" : "baseline"}`,
+        `Field reports ${state.records.length} · FIELD VERIFIED DATA when verified`
+      ].map(v => `<div class="border-b border-[#1d475c] pb-2">${v}</div>`).join("");
+      document.getElementById("assimHistory").innerHTML = [
+        "AE-0189 · prior deterministic observation reweighting · complete",
+        state.assimilated ? "AE-0192 · 12 km east observation · reweighted and resampled" : "AE-0192 · east-shift observation · awaiting action"
+      ].map(v => `<div class="border border-[#285166] p-2">${v}</div>`).join("");
+    }
+
+    async function assimilate(button) {
+      if (state.assimilated) return toast("Assimilation event AE-0192 is already applied. Reset Demo to repeat deterministically.");
+      button.disabled = true; button.textContent = "REWEIGHTING PARTICLES…";
+      addEvent("New simulated observation received 12 km east of forecast centre");
+      await service.assimilate();
+      state.assimilated = true;
+      state.forecast = { arrival:81, spread:42, uncertainty:42, beachA:31, beachB:81 };
+      document.getElementById("beachA").textContent = "31%";
+      document.getElementById("beachB").textContent = "81%";
+      document.getElementById("afterUncertainty").textContent = "42 km";
+      document.getElementById("afterContour").classList.add("shift");
+      document.getElementById("correctedPath").setAttribute("opacity","1");
+      document.getElementById("assimilationHelper").textContent = "Forecast updated using a new observation.";
+      document.getElementById("assimKpi").textContent = "CORRECTED";
+      document.getElementById("riskKpi").textContent = "91 / 100";
+      document.getElementById("detRisk").textContent = "91 / 100";
+      document.getElementById("uncertaintyValue").textContent = "42 km";
+      document.getElementById("arrivalValue").textContent = "81% / 72H";
+      button.textContent = "ASSIMILATED · AE-0192";
+      addEvent("Assimilation complete: likelihood weighted by 12 km distance, confidence, and image quality");
+      addEvent("Forecast shifted 34 km; uncertainty reduced 27%; Beach B updated priority");
+      renderTwin(); renderHotspots(); renderRisk(); renderResponse();
+      toast("Forecast updated using a new observation.");
+    }
+
+    function renderHotspots() {
+      const items = state.assimilated ? [
+        "HOTSPOT 01 · BEACH B · VERY HIGH · corrected forecast concentration",
+        "HOTSPOT 02 · Kovalam · HIGH · shoreline arrival and sensitive coast",
+        "HOTSPOT 03 · offshore contour · WATCH · field verification recommended"
+      ] : [
+        "HOTSPOT 01 · BEACH A · VERY HIGH · baseline concentration",
+        "HOTSPOT 02 · Kovalam · HIGH · predicted coastal accumulation",
+        "HOTSPOT 03 · offshore contour · WATCH · uncertainty remains"
+      ];
+      document.getElementById("hotspotFeed").innerHTML = items.map((x,i) => `<div class="border-l-2 ${i===0?"border-amber-300":"border-cyan-300"} pl-2">${x}<br><span class="text-[#91aeba]">Explainable simulated priority recommendation</span></div>`).join("");
+    }
+
+    function renderRisk() {
+      const factors = [["Debris concentration",9],["Arrival probability",state.assimilated?10:8],["Protected-area proximity",10],["Fishing activity",7],["Forecast persistence",8],["Uncertainty",state.assimilated?6:8],["Coastal sensitivity",10],["Cleanup difficulty",7],["Field confirmation",state.records.length?7:3]];
+      document.getElementById("riskFactors").innerHTML = factors.map(([a,b]) => `<div class="border border-[#285166] p-2">${a}<b class="float-right ${b>8?"text-amber-300":"text-cyan-200"}">${b}/10</b></div>`).join("");
+      const priority = state.assimilated ? "Beach B" : "Beach A";
+      document.getElementById("priorityZones").innerHTML = [
+        [priority,"VERY HIGH","Concentration, predicted arrival, coastal sensitivity, and corrected forecast alignment.","Verify within 12 hours and prepare targeted shoreline response."],
+        ["Kovalam sector","HIGH","Arrival probability, community proximity, and field-access feasibility.","Inspect shoreline and submit GPS-verified evidence."],
+        ["Offshore contour","WATCH","Modelled evidence remains uncertain and requires further observation.","Monitor next observation window before deployment."]
+      ].map(([a,b,c,d]) => `<article class="border border-[#285166] p-3"><span class="badge ${b==="VERY HIGH"?"sim":"model"}">${b}</span><h3 class="font-semibold mt-2">${a}</h3><p class="text-xs text-[#b6d0d8] mt-2">${c}</p><p class="text-xs text-cyan-200 mt-2">${d}</p></article>`).join("");
+    }
+
+    function renderResponse() {
+      const priority = state.assimilated ? "Beach B" : "Beach A";
+      document.getElementById("responseList").innerHTML = [
+        [`Verify ${priority} within 12 hours`,"Contributing factors: arrival probability, concentration, corrected forecast."],
+        ["Schedule shoreline cleanup readiness","Contributing factors: environmental risk, coastal sensitivity, response lead time."],
+        ["Collect field GPS observations","Contributing factors: uncertainty reduction and model calibration needs."]
+      ].map(([a,b]) => `<div class="border border-[#285166] p-3 text-xs"><b>${a}</b><p class="text-[#91aeba] mt-1">${b}</p><button class="btn responseMap mt-2">View on map</button></div>`).join("");
+      document.getElementById("alertList").innerHTML = [
+        ["WATCH","Potential floating debris signal","Probabilistic detection, not absolute identification."],
+        ["WARNING","Coastal arrival window","Forecast intersects shoreline probability region."],
+        [state.assimilated?"CRITICAL":"INFO","Forecast status",state.assimilated?"Assimilation moved priority to Beach B.":"Baseline forecast remains uncorrected."],
+        ["INFO","Field feedback queue",`${state.records.length} stored report(s) available to Digital Twin.`]
+      ].map(([a,b,c]) => `<div class="border-l-2 ${a==="CRITICAL"?"border-red-400":a==="WARNING"?"border-amber-300":"border-cyan-300"} pl-3 py-2"><span class="tiny">${a}</span><b class="block">${b}</b><span class="text-[#91aeba]">${c}</span></div>`).join("");
+      document.querySelectorAll(".responseMap").forEach(btn => btn.onclick = () => showView("overview"));
+    }
+
+    function renderModels() {
+      document.getElementById("modelMetrics").innerHTML = [["Precision",".81"],["Recall",".76"],["F1",".78"],["Accuracy",".83"],["Calibration",".09"],["False positives","12%"],["False negatives","18%"],["Dataset","v0.8"]].map(([a,b]) => `<div class="border border-[#285166] p-2"><span class="label">${a}</span><b class="block mt-1">${b}</b></div>`).join("");
+    }
+
+    function renderRepository() {
+      const entities = ["satellite observations","detections","ocean conditions","weather","forecasts","particles","assimilation events","risk assessments","hotspots","field reports","alerts","reports","model versions","datasets","provenance","audit events"];
+      document.getElementById("repositoryList").innerHTML = entities.map(v => `<div class="border border-[#285166] p-2">${v}</div>`).join("");
+    }
+
+    function renderAudit() {
+      const entries = [
+        "AUD-109 · source observation SAT-551 · simulated",
+        "AUD-110 · model AquaAssimilate-v1.0 · dataset v0.8",
+        `AUD-111 · field report count ${state.records.length} · local Canva Sheet`,
+        `AUD-112 · forecast FORECAST-2048 · ${state.assimilated ? "corrected by AE-0192" : "baseline"}`,
+        "AUD-113 · ocean/current and wind/wave forcing · demo contract"
+      ];
+      const node = document.getElementById("auditList");
+      if (node) node.innerHTML = entries.map(x => `<div class="border-b border-[#1d475c] pb-2">${x}</div>`).join("");
+    }
+
+    function renderFieldReports() {
+      const root = document.getElementById("fieldReports");
+      if (!state.records.length) {
+        root.innerHTML = `<div class="border border-dashed border-[#285166] p-4 text-[#91aeba]">No saved field reports yet. Create a report to add evidence to the local feedback and assimilation queue.</div>`;
+        renderTwin(); renderAudit(); return;
+      }
+      root.innerHTML = "";
+      state.records.forEach(record => {
+        const item = document.createElement("article");
+        item.className = "border border-[#285166] p-3";
+        item.dataset.id = record.__backendId;
+        item.innerHTML = `<div class="flex justify-between gap-2"><b>${record.location}</b><span class="badge field">${record.status}</span></div><p class="mt-1">${record.debris_class} · ${record.estimated_quantity} · ${record.coverage}</p><p class="text-[#91aeba] mt-1">${record.notes || "No notes"}</p><div class="flex flex-wrap gap-2 mt-2"><button class="btn p-1 reportAction" data-status="Verified">Verify</button><button class="btn p-1 reportAction" data-status="Cleanup Scheduled">Schedule Cleanup</button><button class="btn p-1 reportAction" data-status="Cleanup Completed">Complete Cleanup</button><button class="btn p-1 feedTwin">Feed Observation Back</button></div>`;
+        root.appendChild(item);
+      });
+      document.querySelectorAll(".reportAction").forEach(button => button.onclick = updateReportStatus);
+      document.querySelectorAll(".feedTwin").forEach(button => button.onclick = () => {
+        addEvent("Field observation added to Digital Twin assimilation queue");
+        toast("Field observation linked to local Digital Twin feedback queue.");
+        renderTwin();
+      });
+      renderTwin(); renderAudit();
+    }
+
+    async function updateReportStatus(event) {
+      const button = event.currentTarget;
+      const record = state.records.find(r => r.__backendId === button.closest("[data-id]").dataset.id);
+      if (!record) return toast("That field report is no longer available.");
+      button.disabled = true;
+      try {
+        const result = await window.dataSdk.update({ ...record, status: button.dataset.status });
+        if (!result.isOk) toast("Could not confirm the update. Refresh before trying again.");
+        else {
+          addEvent(`Field report ${record.location} updated: ${button.dataset.status}`);
+          toast("Field status stored and reflected in the response feedback queue.");
+        }
+      } finally {
+        button.disabled = false;
+      }
+    }
+
+    let initialLoadTimer;
+    const dataHandler = {
+      onDataChanged(data) {
+        clearTimeout(initialLoadTimer);
+        state.records = data;
+        document.getElementById("fieldLoadState").textContent = "SYNCED";
+        renderFieldReports();
+      }
+    };
+
+    async function initializeData() {
+      initialLoadTimer = setTimeout(() => {
+        document.getElementById("fieldLoadState").textContent = "RETRY";
+        toast("Could not load saved field reports. Refresh to retry.");
+      }, 8000);
+      const result = await window.dataSdk.init(dataHandler);
+      if (!result.isOk) {
+        clearTimeout(initialLoadTimer);
+        document.getElementById("fieldLoadState").textContent = "OFFLINE";
+        toast("Could not initialise saved field reports.");
+      }
+    }
+
+    async function submitFieldReport(event) {
+      event.preventDefault();
+      const button = event.submitter;
+      if (state.records.length >= 999) return toast("Field report limit reached.");
+      button.disabled = true;
+      const original = button.textContent;
+      button.textContent = "SAVING…";
+      const timestamp = document.getElementById("fieldTimestamp").value;
+      const record = {
+        report_type: document.getElementById("reportType").value,
+        location: document.getElementById("fieldLocation").value,
+        latitude: +document.getElementById("fieldLat").value,
+        longitude: +document.getElementById("fieldLon").value,
+        debris_class: document.getElementById("fieldClass").value,
+        estimated_quantity: document.getElementById("fieldQuantity").value,
+        coverage: document.getElementById("fieldCoverage").value,
+        notes: document.getElementById("fieldNotes").value,
+        status: document.getElementById("fieldStatus").value,
+        created_at: timestamp ? new Date(timestamp).toISOString() : new Date().toISOString()
+      };
+      try {
+        const result = await window.dataSdk.create(record);
+        if (!result.isOk) toast("Could not confirm save. Refresh before trying again.");
+        else {
+          addEvent(`Field report saved: ${record.location} added to provenance and assimilation queue`);
+          toast("Field report saved to Canva Sheet and queued for local Digital Twin feedback.");
+        }
+      } finally {
+        button.disabled = false;
+        button.textContent = original;
+      }
+    }
+
+    function download(name, content, type) {
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(new Blob([content], {type}));
+      a.download = name;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    async function generateReport(button) {
+      button.disabled = true;
+      const result = await service.report();
+      const priority = state.assimilated ? "Beach B" : "Beach A";
+      document.getElementById("reportPreview").innerHTML = `<h2 class="font-serif text-xl text-white">Structured ${document.getElementById("reportSelect").value}</h2><div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-3"><div class="border border-[#285166] p-2"><b>Observation</b><br>SIMULATED SAT-551 · quality ${state.quality.toFixed(2)} · 14:32 UTC</div><div class="border border-[#285166] p-2"><b>Detection</b><br>${state.detectionClass} · confidence ${(state.confidence*100).toFixed(1)}% · DEMO METRICS</div><div class="border border-[#285166] p-2"><b>Forecast</b><br>FORECAST-2048 · ${state.assimilated ? "corrected" : "baseline"} · uncertainty ${state.assimilated ? 42 : 58} km</div><div class="border border-[#285166] p-2"><b>Risk and priority</b><br>Environmental risk ${state.assimilated ? 91 : 84}/100 · ${priority}</div><div class="border border-[#285166] p-2"><b>Field observations</b><br>${state.records.length} local Canva Sheet report(s)</div><div class="border border-[#285166] p-2"><b>Provenance</b><br>Model v1.0 · dataset v0.8 · AE-0192 · audit history included</div></div><p class="mt-3 text-amber-200">Scientific note: all prediction values are simulated demonstration outputs, not historical measurements.</p>`;
+      button.disabled = false;
+      toast(`In-app report preview ${result.id} generated.`);
+    }
+
+    async function runIncident() {
+      if (state.simulationRunning) return;
+      state.simulationRunning = true;
+      const button = document.getElementById("runSimulation");
+      button.disabled = true;
+      document.getElementById("assimKpi").textContent = "RUNNING";
+      const sequence = [
+        "Observation received — deterministic local satellite record ingested",
+        "Image quality assessed — clouds, glint, foam, resolution, geolocation checked",
+        "AI detection — replaceable inference adapter produced cautious probabilities",
+        "Debris state initialised — segmentation footprint converted to geospatial state",
+        "Ocean and weather fusion — demo current, wind, and wave forcing joined",
+        "Ensemble forecast — seeded particles propagated to probability regions",
+        "Hotspot and environmental risk calculation complete",
+        "New observation — simulated evidence 12 km east of forecast centre",
+        "Assimilation — distance likelihood, quality, and confidence reweighted",
+        "Corrected forecast — resampled ensemble shifted 34 km",
+        "Priority map — Beach B recommended for field response",
+        "Report preview — provenance-rich incident report prepared"
+      ];
+      for (let i=0; i<sequence.length; i++) {
+        addEvent(sequence[i], `14:20:${String(3+i*3).padStart(2,"0")}`);
+        await new Promise(r => setTimeout(r, 310));
+      }
+      if (!state.assimilated) await assimilate(document.getElementById("assimilateBtn"));
+      await generateReport(document.getElementById("generateReport"));
+      state.simulationRunning = false;
+      button.disabled = false;
+      document.getElementById("assimKpi").textContent = "CORRECTED";
+      toast("Incident simulation completed: corrected forecast, priority recommendation, and report preview updated.");
+    }
+
+    function resetDemo() {
+      state.assimilated = false;
+      state.quality = .82;
+      state.confidence = .847;
+      state.detectionClass = "Potential Plastic";
+      state.forecast = {arrival:31, spread:28, uncertainty:58, beachA:72, beachB:18};
+      document.getElementById("beachA").textContent = "31%";
+      document.getElementById("beachB").textContent = "81%";
+      document.getElementById("afterUncertainty").textContent = "58 km";
+      document.getElementById("assimilationHelper").textContent = "Ready to use the new observation.";
+      document.getElementById("assimKpi").textContent = "READY";
+      document.getElementById("riskKpi").textContent = "84 / 100";
+      document.getElementById("detRisk").textContent = "84 / 100";
+      document.getElementById("uncertaintyValue").textContent = "58 km";
+      document.getElementById("correctedPath").setAttribute("opacity",".2");
+      document.getElementById("assimilateBtn").textContent = "ASSIMILATE OBSERVATION";
+      document.getElementById("eventConsole").innerHTML = "";
+      addEvent("Demo reset to deterministic baseline", "14:20:00");
+      renderHorizon(); renderTwin(); renderHotspots(); renderRisk(); renderResponse(); renderDetectionTable();
+      toast("Deterministic demo reset.");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+      document.getElementById("fieldTimestamp").value = new Date().toISOString().slice(0,16);
+      renderMapParticles(); renderPipeline(); renderHorizon(); renderDetectionTable(); renderForecastCards(); renderHotspots(); renderRisk(); renderResponse(); renderTwin(); renderModels(); renderRepository(); renderAudit();
+      drawForecast();
+      addEvent("Demo service initialised — backend-ready contract active", "14:20:00");
+      addEvent("Satellite observation record available: SAT-551", "14:20:03");
+      initializeData();
+
+      document.querySelectorAll(".nav-btn").forEach(btn => btn.onclick = () => showView(btn.dataset.view));
+      document.getElementById("menuBtn").onclick = () => document.getElementById("rail").classList.toggle("open");
+      document.getElementById("architectureBtn").onclick = () => document.getElementById("architectureDrawer").classList.add("open");
+      document.querySelector(".closeDrawer").onclick = () => document.getElementById("architectureDrawer").classList.remove("open");
+      document.getElementById("runSimulation").onclick = runIncident;
+      document.getElementById("replayBtn").onclick = runIncident;
+      document.getElementById("resetBtn").onclick = resetDemo;
+      document.getElementById("mapTwinBtn").onclick = () => showView("twin");
+      document.getElementById("overviewAssimilateBtn").onclick = () => showView("twin");
+      document.getElementById("analyzeBtn").onclick = event => analyzeObservation(event.currentTarget);
+      document.getElementById("assimilateBtn").onclick = event => assimilate(event.currentTarget);
+      document.getElementById("forecastRunBtn").onclick = event => runForecast(event.currentTarget);
+      document.getElementById("fieldForm").onsubmit = submitFieldReport;
+      document.getElementById("generateReport").onclick = event => generateReport(event.currentTarget);
+
+      document.querySelectorAll(".horizon").forEach(btn => btn.onclick = () => { state.horizon = +btn.dataset.h; renderHorizon(); toast(`Forecast horizon set to ${state.horizon} hours.`); });
+      ["currentInfluence","windInfluence"].forEach(id => document.getElementById(id).oninput = () => {
+        document.getElementById(id === "currentInfluence" ? "currentVal" : "windVal").textContent = document.getElementById(id).value;
+        drawForecast();
+      });
+      ["particleCount","duration","diffusion"].forEach(id => document.getElementById(id).onchange = drawForecast);
+
+      document.querySelectorAll(".exportBtn").forEach(button => button.onclick = () => {
+        const format = button.dataset.format;
+        if (format === "CSV") {
+          download("aquaassimilate-report.csv", "id,classification,confidence,source\nDET-021,Potential Floating Marine Plastic,84.7%,SIMULATED DATA", "text/csv");
+          toast("CSV demonstration export downloaded.");
+        } else if (format === "GeoJSON") {
+          download("aquaassimilate-forecast.geojson", JSON.stringify({type:"FeatureCollection",features:[{type:"Feature",properties:{source:"SIMULATED DATA",forecast:"FORECAST-2048"},geometry:{type:"Point",coordinates:[75.982,9.931]}}]}), "application/geo+json");
+          toast("GeoJSON demonstration export downloaded.");
+        } else {
+          toast(`${format} is presented as a simulated export in this prototype; no true ${format} file renderer is connected.`);
+        }
+      });
+
+      document.getElementById("apiCards").innerHTML = [
+        "GET /satellite","POST /satellite/analyze","GET /detections","POST /forecast/run","POST /assimilation/run","GET /digital-twin","GET /risk","GET /hotspots","POST /field-reports","GET /alerts","POST /reports/generate","GET /models","GET /provenance"
+      ].map(endpoint => `<div class="border border-[#285166] p-2 font-mono">${endpoint}</div>`).join("");
+    });
+  </script>
+ 
+</body></html>
